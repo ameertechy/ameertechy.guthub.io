@@ -3,31 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ameer Techy | Portfolio</title>
+  <title>Ameer Techy | IT System Engineer Portfolio</title>
   <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: #f4f6f8;
       color: #333;
     }
     header {
-      background: #007bff;
+      background: #005a9e;
       color: white;
       padding: 2rem;
       text-align: center;
     }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: -75px;
+    }
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
       background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 2rem;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     h2 {
-      border-bottom: 2px solid #007bff;
+      color: #005a9e;
+      border-bottom: 2px solid #ddd;
       padding-bottom: 0.5rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
     }
     .project {
       margin-bottom: 1.5rem;
@@ -35,61 +47,82 @@
     footer {
       text-align: center;
       padding: 1rem;
+      background: #eaeaea;
       font-size: 0.9rem;
-      color: #777;
+      color: #555;
     }
     a {
-      color: #007bff;
+      color: #005a9e;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="profile.jpg" alt="Ameer Techy" class="profile-img" />
+    <h1>Ameer Techy</h1>
+    <p>IT System Engineer | DevOps | Infrastructure Specialist</p>
+  </header>
 
-<header>
-  <h1>Ameer Techy</h1>
-  <p>IT System Engineer | DevOps | Infra Specialist</p>
-</header>
+  <section>
+    <h2>About Me</h2>
+    <p>Dedicated IT System Engineer based in UAE with hands-on expertise in infrastructure support, network security, server and storage management, and full-stack system administration across educational and enterprise sectors.</p>
+  </section>
 
-<section>
-  <h2>About Me</h2>
-  <p>Experienced IT System Engineer based in UAE’s education sector. Specialized in servers, networks, storage, DevOps, and secure deployments on both Windows and Ubuntu platforms.</p>
-</section>
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>IT Support & Technical Engineer</strong><br>TwinMOS Technology Middle East FZE | Dubai, UAE<br><em>Nov 2020 – Aug 2023</em></li>
+      <li><strong>Document Controller / Admin Coordinator</strong><br>Haward Technology Middle East | Ajman, UAE<br><em>Nov 2019 – March 2020</em></li>
+      <li><strong>Network & System Support Engineer</strong><br>Mundo Trading Pvt LTD | India<br><em>June 2018 – Aug 2019</em></li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>Windows & Linux Server Administration</li>
-    <li>VMware, Hyper-V, Proxmox</li>
-    <li>DevOps – Docker, CI/CD</li>
-    <li>Networking – Switches, Firewalls, APs</li>
-    <li>Scripting & Automation – PowerShell, Bash</li>
-  </ul>
-</section>
+  <section>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Networking:</strong> Huawei Core & Access Switches, FortiGate Firewalls, VLAN, VPN, STP, OSPF, DHCP, DNS</li>
+      <li><strong>Wireless:</strong> Huawei AP4050DN-E, AP6050DN, Agile Controller, eSight Monitoring</li>
+      <li><strong>Operating Systems:</strong> Windows Server 2012/2016, Windows 10/11, Linux (basic), Active Directory, GPO, Hyper-V</li>
+      <li><strong>Storage & Backup:</strong> Huawei OceanStor 5500/2200, QNAP NAS, Veeam Backup</li>
+      <li><strong>IT Support:</strong> Kaspersky EDR, Helpdesk Tools, AV Systems, VMware, Printer/ID Systems</li>
+      <li><strong>Telephony/CCTV:</strong> Avaya PBX, Hikvision Cameras</li>
+      <li><strong>Cloud & Collaboration:</strong> Google Workspace Admin, Office 365, Teams, Zoom</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Projects</h2>
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="project">
+      <h3>OpenProject On-Prem Deployment</h3>
+      <p>Dockerized OpenProject deployed under Windows VM with dedicated container IP for internal project tracking.</p>
+    </div>
+    <div class="project">
+      <h3>Moodle Upgrade Automation</h3>
+      <p>Upgraded Moodle 4.1 to 4.5 in Ubuntu using scripted automation, preserving moodledata and SQL backup integrity.</p>
+    </div>
+    <div class="project">
+      <h3>Snipe-IT Deployment via IIS</h3>
+      <p>Laravel-based asset management hosted on IIS with barcode-enabled inventory using Code128 for campus assets.</p>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>OpenProject On-Premise Deployment</h3>
-    <p>Deployed Docker-based OpenProject on Windows Server with containerized IP configuration for internal project management.</p>
-  </div>
+  <section>
+    <h2>GitHub Repositories</h2>
+    <ul>
+      <li><a href="https://github.com/ameertechy/openproject-deploy" target="_blank">openproject-deploy</a></li>
+      <li><a href="https://github.com/ameertechy/moodle-upgrade-script" target="_blank">moodle-upgrade-script</a></li>
+      <li><a href="https://github.com/ameertechy/snipeit-iis" target="_blank">snipeit-iis</a></li>
+    </ul>
+  </section>
 
-  <div class="project">
-    <h3>Snipe-IT Asset Management</h3>
-    <p>Deployed and maintained Laravel-based Snipe-IT on IIS with Code128 barcoding for campus-wide asset tracking.</p>
-  </div>
-</section>
+  <section>
+    <h2>Resume</h2>
+    <p><a href="https://drive.google.com/file/d/1rRebm9ASbUfhTvndGbZ0opNC0dMdV388/view?usp=drivesdk" target="_blank">View PDF Resume</a></p>
+  </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:ameerulmujahidin96@gmail.com">ameerulmujahidin96@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/ameerul-mujahidin-4176aa2b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/ameertechy</a></p>
-</section>
-
-<footer>
-  &copy; 2025 Ameer Techy. All rights reserved.
-</footer>
-
+  <footer>
+    &copy; Ameerul Mujahidin | Hosted on GitHub Pages
+  </footer>
 </body>
 </html>
